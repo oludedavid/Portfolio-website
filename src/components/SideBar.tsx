@@ -30,7 +30,7 @@ const SideBar: React.FC = () => {
             <img
               className="icon sidebar__menu-link-icon"
               src={process.env.PUBLIC_URL + "/images/resume.png"}
-              alt="resume icon"
+              alt="portfolio icon"
             />
             Portfolio
           </Link>

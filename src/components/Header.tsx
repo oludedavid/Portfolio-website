@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="header">
+    <header className="head">
       <h1 className="header__logo text-gradient">Dave.</h1>
       <ul className="header__menu">
         <li className="header__menu-item">

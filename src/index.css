@@ -89,18 +89,20 @@ body {
 }
 
 /* header */
-.header {
+.head {
   color: white;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 10px;
 }
 .header__logo {
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
   padding: 20px;
   filter: contrast(70%);
 }
@@ -167,16 +169,19 @@ body {
 }
 
 .sidebar__menu {
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 100px 10px 0 10px;
   gap: 40px;
 }
 
 .sidebar__menu a {
   text-decoration: none;
+  width: 100%;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -201,6 +206,7 @@ body {
 }
 .link {
   color: white;
+  display: flex;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 2px;
@@ -240,10 +246,11 @@ body {
   flex-direction: column;
   align-items: center;
   color: white;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 .home__typewriter-overlay-heading {
-  font-size: 3.8rem;
+  font-size: 4rem;
+  font-weight: 600;
   letter-spacing: 4px;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -258,6 +265,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 .about__content-container {
   display: flex;
@@ -329,6 +337,7 @@ body {
   width: 100%;
   height: 30px;
   position: fixed;
+  padding-top: 20px;
 }
 
 .portfolio__menu {
@@ -376,7 +385,6 @@ body {
   justify-content: center;
   align-items: center;
   animation: slideInFromBottom 1s ease;
-  padding: 50px;
 }
 .skill__card-container {
   display: flex;
@@ -386,10 +394,11 @@ body {
   justify-content: center;
   align-items: center;
   animation: slideInFromBottom 1s ease;
+  padding-top: 100px;
 }
 .skill__card {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 330px;
   border-radius: 20px;
   padding: 50px;
   display: flex;
@@ -453,6 +462,32 @@ body {
 
 .pagination__link--active {
   color: #4caf50;
+}
+
+/* experirnce */
+.experience {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  animation: slideInFromBottom 1s ease;
+  padding-top: 80px;
+}
+
+/* project */
+.project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  animation: slideInFromBottom 1s ease;
+  padding-top: 80px;
 }
 
 /* animations */

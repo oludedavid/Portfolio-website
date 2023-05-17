@@ -7,7 +7,7 @@ type ExperienceProps = {
 
 const Experiences: React.FC<ExperienceProps> = ({ experience_data }) => {
   return (
-    <div>
+    <div className="experience">
       <h1>Experience</h1>
       <p>Experience page body content</p>
     </div>

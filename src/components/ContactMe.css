@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact {
+  background-color: #73a9ad;
+  background-image: linear-gradient(to bottom right, #73a9ad, #000);
+  font-family: "Poppins", sans-serif;
+}

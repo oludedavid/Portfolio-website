@@ -20,8 +20,8 @@ const About: React.FC = () => {
       </section>
 
       <div className="about__content-button-container">
-        <Link to="/resume" className="btn btn--gradient">
-          Projects
+        <Link to="/portfolio" className="btn btn--gradient">
+          Learn more
         </Link>
         <Link to="/contact-me" className="btn btn--gradient">
           Contact Me
