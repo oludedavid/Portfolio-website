@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import skillData, { SkillType } from "./components/skills-data";
 import projectData, { Project } from "./components/project-data";
 import experienceData, { Experience } from "./components/experienceData";
+import PreLoader from "./components/Preloader";
 
 // define the types of the props being passed into the experience component
 const experienceDataProps: Experience[] = experienceData;
@@ -65,41 +66,44 @@ const App: React.FC = () => {
   };
 
   return (
-    <section className="App">
-      <section className="App__header-container">
-        <Header />
+    <>
+      <PreLoader />
+      <section className="App">
+        <section className="App__header-container">
+          <Header />
+        </section>
+        <main className="App__main-container">
+          <section className="App__sidebar-container">
+            <SideBar />
+          </section>
+          <section className="App__content-container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route
+                path="/portfolio"
+                element={
+                  <Portfolio
+                    experienceTab={experienceTab}
+                    skillsTab={skillsTab}
+                    projectsTab={projectsTab}
+                    handleExperienceTab={handleExperienceTab}
+                    handleProjectsTab={handleProjectsTab}
+                    handleSkillsTab={handleSkillsTab}
+                    experienceDataProps={experienceDataProps}
+                    skillDataProps={skillDataProps}
+                    projectDataProps={projectDataProps}
+                    isButtonActive={isButtonActive}
+                  />
+                }
+              />
+              <Route path="/contact-me" element={<ContactMe />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </section>
+        </main>
       </section>
-      <main className="App__main-container">
-        <section className="App__sidebar-container">
-          <SideBar />
-        </section>
-        <section className="App__content-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route
-              path="/portfolio"
-              element={
-                <Portfolio
-                  experienceTab={experienceTab}
-                  skillsTab={skillsTab}
-                  projectsTab={projectsTab}
-                  handleExperienceTab={handleExperienceTab}
-                  handleProjectsTab={handleProjectsTab}
-                  handleSkillsTab={handleSkillsTab}
-                  experienceDataProps={experienceDataProps}
-                  skillDataProps={skillDataProps}
-                  projectDataProps={projectDataProps}
-                  isButtonActive={isButtonActive}
-                />
-              }
-            />
-            <Route path="/contact-me" element={<ContactMe />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </section>
-      </main>
-    </section>
+    </>
   );
 };
 
