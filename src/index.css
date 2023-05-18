@@ -653,6 +653,7 @@ body {
   gap: 70px;
   padding: 15px 100px;
 }
+
 .skill__card {
   width: 280px;
   height: 350px;
@@ -687,28 +688,61 @@ body {
 }
 
 /* media query for skill */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 450px) and (max-width: 780px) {
   .skill__card-container {
     animation: none;
     padding-top: 30px;
   }
   .skill__card {
-    width: 200px;
-    height: 210px;
+    width: 280px;
+    height: 330px;
     border-radius: 20px;
-    padding: 60px;
+    padding: 40px;
   }
+  h1.skill__heading {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    top: none;
+    left: none;
+  }
+  .pagination__link {
+    display: inline-block;
+    padding: 1px 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skill {
+    margin-top: 20px;
+  }
+
+  .skill__card-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 20px;
+    align-items: center;
+    margin-top: 4px;
+  }
+
+  .skill__card {
+    width: 250px;
+    height: 310px;
+    padding: 30px;
+  }
+
   .skill__heading {
+    filter: brightness(80%);
     display: block;
     visibility: visible;
     opacity: 1;
     position: static;
     top: auto;
     left: auto;
-  }
-  .pagination__link {
-    display: inline-block;
-    padding: 1px 5px;
   }
 }
 
@@ -848,7 +882,7 @@ body {
   transform: scale(1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 450px) and (max-width: 780px) {
   .project {
     display: flex;
     flex-direction: column;
@@ -875,6 +909,37 @@ body {
   }
   .project__card {
     animation: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project {
+    padding: 50px 20px;
+  }
+
+  .project__card-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .project__card {
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+  }
+
+  .project__heading {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    top: auto;
+    left: auto;
   }
 }
 

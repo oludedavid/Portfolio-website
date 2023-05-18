@@ -18,7 +18,7 @@ const Skills: React.FC<SkillsProps> = ({ skill_data }) => {
   return (
     <>
       <div className="skill" id="skill">
-        <h1 className="skill__heading text-center text-3xl">Skills</h1>
+        <h1 className="skill__heading text-center text-3xl ">Skills</h1>
         <div className="skill__card-container">
           <Carousel
             className="skill__card-carousel"
