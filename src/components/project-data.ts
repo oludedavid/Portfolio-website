@@ -9,6 +9,14 @@ export type Project = {
 const projectData: Project[] = [
   {
     id: 1,
+    projectName: "Wiggies E-comerce App",
+    projectDescription:
+      " An E-commerce website built with ReactJS, Firebase and tailwindCSS",
+    projectImage: "./images/wig.png",
+    projectUrl: "https://dave-a046c.web.app",
+  },
+  {
+    id: 2,
     projectName: "Portfolio App",
     projectDescription:
       "A portfolio website Application built with HTML, CSS, Bootstrap and  Javascript",
@@ -16,14 +24,14 @@ const projectData: Project[] = [
     projectUrl: "https://pensive-liskov-de27cd.netlify.app",
   },
   {
-    id: 2,
+    id: 3,
     projectName: "Comfy App",
     projectDescription: "An E-commerce website built with ReactJS",
     projectImage: "./images/projects/comfy.jpg",
     projectUrl: "https://nervous-goldstine-ea996b.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     projectName: "TinDog App",
     projectDescription:
       "An Product page website built with Bootstrap, HTML and CSS",
@@ -31,7 +39,7 @@ const projectData: Project[] = [
     projectUrl: "https://oludedavid.github.io/TinDog/",
   },
   {
-    id: 4,
+    id: 5,
     projectName: "Dad Jokes App ",
     projectDescription:
       "This a project that fetches jokes from an API and displays them on the screen",
@@ -41,7 +49,7 @@ const projectData: Project[] = [
   },
 
   {
-    id: 5,
+    id: 6,
     projectName: "Counter App ",
     projectDescription: "This is a simple counter app built with Javascript",
     projectImage: "https://i.ibb.co/0jZ3qYH/comfy.png",
@@ -49,7 +57,7 @@ const projectData: Project[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     projectName: "Simon Game ",
     projectDescription: "This is a simple simon game built with Javascript",
     projectImage: "./images/projects/simon.jpg",
@@ -57,7 +65,7 @@ const projectData: Project[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     projectName: "Choice Prioritizer App ",
     projectDescription: "random choice picker app built with Javascript",
     projectImage: "https://www.textfixer.com/images/random-choice-tool.png",
