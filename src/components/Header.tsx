@@ -1,6 +1,11 @@
 import React from "react";
 
-const Header: React.FC = () => {
+type HeaderProps = {
+  toggle: boolean;
+  toggleMenu: () => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ toggle, toggleMenu }) => {
   return (
     <header className="head">
       <h1 className="header__logo text-gradient">Dave.</h1>
@@ -39,13 +44,18 @@ const Header: React.FC = () => {
           <p className="header__contact">odavidolumide@gmail.com</p>
         </li>
       </ul>
-      <figure className="burger-menu-container">
+      <button
+        className="burger-menu-container"
+        onClick={() => {
+          toggleMenu();
+        }}
+      >
         <img
           className="header__icon-image burger-menu"
           src={process.env.PUBLIC_URL + "/images/menu.png"}
           alt="GitHub"
         />
-      </figure>
+      </button>
     </header>
   );
 };

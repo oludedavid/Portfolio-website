@@ -45,11 +45,18 @@ const App: React.FC = () => {
     "experience" | "skills" | "projects"
   >("experience");
 
+  const [toggle, setToggle] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setToggle(!toggle);
+  };
+
   const handleExperienceTab = () => {
     setExperienceTab(true);
     setSkillsTab(false);
     setProjectsTab(false);
     setIsButtonActive("experience");
+    setToggle(!toggle);
   };
 
   const handleSkillsTab = () => {
@@ -57,6 +64,7 @@ const App: React.FC = () => {
     setSkillsTab(true);
     setProjectsTab(false);
     setIsButtonActive("skills");
+    setToggle(!toggle);
   };
 
   const handleProjectsTab = () => {
@@ -64,19 +72,24 @@ const App: React.FC = () => {
     setSkillsTab(false);
     setProjectsTab(true);
     setIsButtonActive("projects");
+    setToggle(!toggle);
   };
 
   return (
     <>
       <PreLoader />
-      <NavBar
-        handleExperienceTab={handleExperienceTab}
-        handleProjectsTab={handleProjectsTab}
-        handleSkillsTab={handleSkillsTab}
-      />
+
       <section className="App">
+        <NavBar
+          handleExperienceTab={handleExperienceTab}
+          handleProjectsTab={handleProjectsTab}
+          handleSkillsTab={handleSkillsTab}
+          toggle={toggle}
+          toggleMenu={toggleMenu}
+        />
+
         <section className="App__header-container">
-          <Header />
+          <Header toggle={toggle} toggleMenu={toggleMenu} />
         </section>
         <main className="App__main-container">
           <section className="App__sidebar-container">
