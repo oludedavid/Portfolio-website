@@ -1,6 +1,4 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
-import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 type NavBarProps = {
@@ -28,7 +26,7 @@ const NavBar: React.FC<NavBarProps> = ({
       >
         <img
           src={process.env.PUBLIC_URL + "/images/close.png"}
-          alt=""
+          alt="Close nav"
           className="close-nav images"
         />
       </button>
@@ -98,7 +96,7 @@ const NavBar: React.FC<NavBarProps> = ({
           </Link>
         </li>
         <li className="navbar__menu-link">
-          <HashLink
+          <Link
             to="/portfolio"
             className="nav-link"
             onClick={() => {
@@ -108,13 +106,13 @@ const NavBar: React.FC<NavBarProps> = ({
             <img
               className="icon navbar__menu-link-icon"
               src={process.env.PUBLIC_URL + "/images/cv.png"}
-              alt="contact icon"
+              alt="skills icon"
             />
             Skills
-          </HashLink>
+          </Link>
         </li>
         <li className="navbar__menu-link">
-          <HashLink
+          <Link
             to="/portfolio"
             className="nav-link"
             onClick={() => {
@@ -124,13 +122,13 @@ const NavBar: React.FC<NavBarProps> = ({
             <img
               className="icon navbar__menu-link-icon"
               src={process.env.PUBLIC_URL + "/images/project.png"}
-              alt="contact icon"
+              alt="project icon"
             />
             Projects
-          </HashLink>
+          </Link>
         </li>
         <li className="navbar__menu-link">
-          <HashLink
+          <Link
             to="/portfolio"
             className="nav-link"
             onClick={() => {
@@ -143,12 +141,13 @@ const NavBar: React.FC<NavBarProps> = ({
               alt="resume icon"
             />
             Experiences
-          </HashLink>
+          </Link>
         </li>
         <li className="navbar__menu-link socials">
           <a
             href="https://github.com/oludedavid?tab=repositories"
             target="_blank"
+            rel="noopener noreferrer"
             className="navbar__menu-link"
           >
             <figure className="navbar__icon">
@@ -162,6 +161,7 @@ const NavBar: React.FC<NavBarProps> = ({
           <a
             href="https://www.linkedin.com/in/david-olude-5585a8145/"
             target="_blank"
+            rel="noopener noreferrer"
             className="navbar__menu-link"
           >
             <figure className="navbar__icon">

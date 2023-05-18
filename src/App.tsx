@@ -52,27 +52,33 @@ const App: React.FC = () => {
   };
 
   const handleExperienceTab = () => {
+    if (toggle) {
+      toggleMenu();
+    }
     setExperienceTab(true);
     setSkillsTab(false);
     setProjectsTab(false);
     setIsButtonActive("experience");
-    setToggle(!toggle);
   };
 
   const handleSkillsTab = () => {
+    if (toggle) {
+      toggleMenu();
+    }
     setExperienceTab(false);
     setSkillsTab(true);
     setProjectsTab(false);
     setIsButtonActive("skills");
-    setToggle(!toggle);
   };
 
   const handleProjectsTab = () => {
+    if (toggle) {
+      toggleMenu();
+    }
     setExperienceTab(false);
     setSkillsTab(false);
     setProjectsTab(true);
     setIsButtonActive("projects");
-    setToggle(!toggle);
   };
 
   return (

@@ -4,11 +4,7 @@ import TypeWriter from "typewriter-effect";
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <img
-        className="home__image"
-        src="./images/landing.jpg"
-        alt="landing image"
-      />
+      <img className="home__image" src="./images/landing.jpg" alt="homie" />
       <div className="home__typewriter-overlay-heading-container">
         <h1 className="home__typewriter-overlay-heading">
           <TypeWriter

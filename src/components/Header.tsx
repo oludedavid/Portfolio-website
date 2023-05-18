@@ -14,6 +14,7 @@ const Header: React.FC<HeaderProps> = ({ toggle, toggleMenu }) => {
           <a
             href="https://www.linkedin.com/in/david-olude-5585a8145/"
             target="_blank"
+            rel="noopener noreferrer"
             className="header__menu-link"
           >
             <figure className="header__icon">
@@ -29,6 +30,7 @@ const Header: React.FC<HeaderProps> = ({ toggle, toggleMenu }) => {
           <a
             href="https://github.com/oludedavid?tab=repositories"
             target="_blank"
+            rel="noopener noreferrer"
             className="header__menu-link"
           >
             <figure className="header__icon">
@@ -53,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ toggle, toggleMenu }) => {
         <img
           className="header__icon-image burger-menu"
           src={process.env.PUBLIC_URL + "/images/menu.png"}
-          alt="GitHub"
+          alt="Burger Menu"
         />
       </button>
     </header>
