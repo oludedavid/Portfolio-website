@@ -3,10 +3,11 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
-import Projects from "./components/Projects";
+import NavBar from "./components/NavBar";
 import NotFoundPage from "./components/NotFoundPage";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
+
 import { Route, Routes } from "react-router-dom";
 import skillData, { SkillType } from "./components/skills-data";
 import projectData, { Project } from "./components/project-data";
@@ -68,13 +69,22 @@ const App: React.FC = () => {
   return (
     <>
       <PreLoader />
+      <NavBar
+        handleExperienceTab={handleExperienceTab}
+        handleProjectsTab={handleProjectsTab}
+        handleSkillsTab={handleSkillsTab}
+      />
       <section className="App">
         <section className="App__header-container">
           <Header />
         </section>
         <main className="App__main-container">
           <section className="App__sidebar-container">
-            <SideBar />
+            <SideBar
+              handleExperienceTab={handleExperienceTab}
+              handleProjectsTab={handleProjectsTab}
+              handleSkillsTab={handleSkillsTab}
+            />
           </section>
           <section className="App__content-container">
             <Routes>

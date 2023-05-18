@@ -22,7 +22,7 @@ const experienceData: Experience[] = [
     companyUrl:
       "https://www.testia.com/?utm_source=linkedin&utm_medium=social&utm_campaign=custombutton",
     companyRole: "Web Developer",
-    companyDuration: "March 2023 - October present",
+    companyDuration: "March 2023 - Present",
     companyLocation: "Bremen, Germany",
     companyResponsibilities: [
       "Optimizing website performance (Testia.com) using tools such as GTmetrix, Pingdom, Lighthouse, WP Rocket, Converter for Media and PageSpeed Insights.",
@@ -39,7 +39,7 @@ const experienceData: Experience[] = [
     id: 2,
     companyName: "Candidate select GmbH",
     companyDescription:
-      "CASE revolutionizes the recruitment process by providing standardized data on grade distributions and program competitiveness, allowing employers to assess candidates' performance accurately and fairly.",
+      "CASE revolutionizes the recruitment process by providing standardized data on grade distributions and program competitiveness.",
     companyImage:
       "https://media.licdn.com/dms/image/C4E0BAQFdkK0SuO9kOA/company-logo_200_200/0/1675205728636?e=1692230400&v=beta&t=LhH3VsOgRNGnN18uKUBF7wkxN76a7KYOzZgWznKxPv8",
     companyUrl: "candidate-select.de/",
@@ -64,7 +64,7 @@ const experienceData: Experience[] = [
     id: 3,
     companyName: "Fedger.io",
     companyDescription:
-      "fedger is a fast growing tech company located in Cologne, Germany. It uses AI-powered solutions, to automate manual and cost intensive work processes. The focus is on the extraction and delivery of structured information from any kind of documents.",
+      "Fedger is a fast growing tech company located in Cologne, Germany. The focus is on the extraction and delivery of structured information from any kind of documents.",
     companyImage:
       "https://media.licdn.com/dms/image/C560BAQFDLQnwSiiu9w/company-logo_200_200/0/1519899704866?e=1692230400&v=beta&t=9OXXSHDIw7Oks8AhLXWUVDo-yerldHsctmkovx1WotM",
     companyUrl: "https://fedger.io",

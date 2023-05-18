@@ -36,12 +36,16 @@ const Header: React.FC = () => {
           </a>
         </li>
         <li className="header__menu-item">
-          <p className="header__contact">+4917620176480</p>
-        </li>
-        <li className="header__menu-item">
           <p className="header__contact">odavidolumide@gmail.com</p>
         </li>
       </ul>
+      <figure className="burger-menu-container">
+        <img
+          className="header__icon-image burger-menu"
+          src={process.env.PUBLIC_URL + "/images/menu.png"}
+          alt="GitHub"
+        />
+      </figure>
     </header>
   );
 };

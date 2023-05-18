@@ -7,14 +7,15 @@ type ExperienceProps = {
 
 const Experiences: React.FC<ExperienceProps> = ({ experience_data }) => {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
+      <h1 className="experience__heading text-center text-3xl">Experience</h1>
       {experience_data.map((experience) => {
         return (
           <article
             key={experience.id}
-            className="experience-card bg-white shadow-lg rounded-lg p-6 mb-6"
+            className="experience-card bg-white shadow-lg rounded-lg  mb-6"
           >
-            <div className="flex items-center">
+            <div className="flex items-center image-decription-cont">
               <div className="mr-4">
                 <img
                   src={experience.companyImage}
@@ -34,7 +35,7 @@ const Experiences: React.FC<ExperienceProps> = ({ experience_data }) => {
                 </a>
               </div>
             </div>
-            <section className="mt-6">
+            <section className="mt-6 role-cont">
               <h2 className="text-lg font-semibold text-gray-500">
                 Role: {experience.companyRole}
               </h2>

@@ -29,7 +29,8 @@ const Skills: React.FC<SkillsProps> = ({ skill_data }) => {
 
   return (
     <>
-      <div className="skill">
+      <div className="skill" id="skill">
+        <h1 className="skill__heading text-center text-3xl">Skills</h1>
         <div className="skill__card-container">
           {currentPageData.map((skill, index) => (
             <div className="skill__card" key={index}>

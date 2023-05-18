@@ -8,10 +8,11 @@ type ProjectsProps = {
 
 const Projects: React.FC<ProjectsProps> = ({ project_data }) => {
   return (
-    <div className="project">
+    <div className="project" id="project">
+      <h1 className="project__heading text-center text-3xl">Projects</h1>
       {project_data.map((project) => {
         return (
-          <div className="project__card">
+          <div key={project.id} className="project__card">
             <img
               src={process.env.PUBLIC_URL + project.projectImage}
               alt=""

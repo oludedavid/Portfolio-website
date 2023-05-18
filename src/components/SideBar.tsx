@@ -1,7 +1,19 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
-const SideBar: React.FC = () => {
+type SideBarProps = {
+  handleExperienceTab: () => void;
+  handleSkillsTab: () => void;
+  handleProjectsTab: () => void;
+};
+
+const SideBar: React.FC<SideBarProps> = ({
+  handleExperienceTab,
+  handleSkillsTab,
+  handleProjectsTab,
+}) => {
   return (
     <nav className="sidebar">
       <ul className="sidebar__menu">
